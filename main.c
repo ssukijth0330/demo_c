@@ -1,14 +1,9 @@
 #include <stdio.h>
 
+//Find max number in an array, by using contant n
 int main() {
-    int n;
-    printf("Enter the number of elements that you want to find the maximum:");
-    scanf("%d", &n);
-    int a[n];
-    for (int i = 0; i < n; i++) {
-        printf("Enter the %d element:", i + 1);
-        scanf("%d", &a[i]);
-    }
+    int n=5;
+    int a[n]=[1,2,3,4,5];
     int max = a[0];
     for (int i = 1; i < n; i++) {
         if (a[i] > max) {
